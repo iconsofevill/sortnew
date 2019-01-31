@@ -1,0 +1,23 @@
+﻿#wrapper {
+	background-image:url(fondiv.jpg);
+	width: 96%;
+	max-width: 80%;
+	margin: auto;
+	padding: 2%;
+	border: 4px silver double;
+	border-radius:30px;
+	text-align: center;
+	box-shadow: 10px 10px 40px black;
+	
+}
+fieldset {
+	border: 4px silver double;
+	border-radius:30px;
+}
+body {
+	background-position: fixed;
+	background-image: url(fonbody.jpg);	
+	font-size:16pt;
+	background-attachment: fixed;
+	
+}

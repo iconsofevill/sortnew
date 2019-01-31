@@ -1,4 +1,5 @@
 ﻿#wrapper {
+	box-shadow: 100px 100px 400px black;
 	background-image:url(fondiv.jpg);
 	width: 96%;
 	max-width: 80%;
@@ -7,7 +8,7 @@
 	border: 4px silver double;
 	border-radius:30px;
 	text-align: center;
-	box-shadow: 10px 10px 40px black;
+	
 	
 }
 fieldset {

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Document</title>
 </head>
-<body><div id="wrapper"><pre>
+<body><pre><div id="wrapper">
     <?php
     $arr =[-5,-356,-78,-6,45,67,1,78,5,2,4,57,786,8,-74,6,2,456,-894,67,-457,4778];
     // echo 'Массив до сортировки: '.'<br>';
@@ -71,6 +71,6 @@
     echo "Сортировка пользовательской функцией занимает ".'<br>'." ".round((($time/($time2+$time))*100),4)."% общего времени сортировки.";
     echo '<br>'.'<br>';
 
-    ?></pre></div>
+    ?></div></pre>
 </body>
 </html>

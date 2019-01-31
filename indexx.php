@@ -12,7 +12,7 @@
     $arr =[-5,-356,-78,-6,45,67,1,78,5,2,4,57,786,8,-74,6,2,456,-894,67,-457,4778];
     // echo 'Массив до сортировки: '.'<br>';
     // print_r($arr);
-
+    
     //сортировка по убыванию
     for ($i=0; $i < count($arr); $i++) { 
         for ($j=$i+1; $j < count($arr); $j++) { 
@@ -42,6 +42,7 @@
     $time_start = microtime(1);
     for ($i=0; $i < 10000; $i++) { 
         sortbubble ($arr);
+        shuffle ($arr);
     }
     $time_end = microtime(1);
     $time = $time_end - $time_start;
@@ -50,6 +51,7 @@
     $time_start2 = microtime(1);
     for ($i=0; $i < 10000; $i++) { 
         asort ($arr);
+        shuffle ($arr);
     }
     
 
@@ -71,6 +73,8 @@
     echo "Сортировка пользовательской функцией занимает ".'<br>'." ".round((($time/($time2+$time))*100),4)."% общего времени сортировки.";
     echo '<br>'.'<br>';
 
+    echo "Сортировка пользовательской функцией медленней в ".'<br>'." ".round(($time/$time2),4)." раз.";
+    echo '<br>'.'<br>';
     ?></div></pre>
 </body>
 </html>
